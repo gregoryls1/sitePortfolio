@@ -13,6 +13,7 @@
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="576">
     <meta property="og:type" content="website">
+    <meta name="author" content="Gregory Lima">
     <meta name="description" content="Gregory Lima: desenvolvedor front-end com conhecimentos em HTML, CSS, Javascript, Bootstrap, sites responsivos e Single Page Application.">
     <meta name="keywords" content="HTML, CSS, Javascript, JQuery, Front-End, Developer, Desenvolvedor, Gregory Lima, sites, web, html, desenvolvimento">
     
@@ -26,6 +27,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
   </head>
   <body>
       <header>
@@ -94,7 +96,7 @@
                         </p>
                       </div>
                       <div class="arrow pt-5 pb-4">
-                        <a href="#resource"><i class="fas fa-angle-double-down"></i></a>
+                        <a onclick="go('#resource')"><i class="fas fa-angle-double-down"></i></a>
                       </div>
                   </div>
               </div>
@@ -107,7 +109,7 @@
                               <hr class="col-3 col-md-2">
                               <h5 class="pt-3 pb-5">Chegou a sua hora de construir um bom site.</h5>
                             </div>
-                            <div class="col-10 col-md-4 text-center">
+                            <div class="col-10 col-md-4 text-center" data-anime="left">
                                 <div class="circle-resource">
                                     <i class="far fa-thumbs-up  symbols"></i>
                                 </div>
@@ -117,7 +119,7 @@
                                     seu negócio.
                                 </p>
                             </div >
-                            <div class="col-10 col-md-4 text-center">
+                            <div class="col-10 col-md-4 text-center" data-anime="bottom">
                                 <div class="circle-resource">
                                     <i class="fas fa-chart-line  symbols"></i>                                
                                 </div>                                
@@ -127,7 +129,7 @@
                                     Google.
                                 </p>
                             </div>
-                            <div class="col-10 col-md-4 text-center">
+                            <div class="col-10 col-md-4 text-center" data-anime="right">
                                 <div class="circle-resource">
                                     <i class="far fa-clock  symbols"></i>                                
                                 </div>   
@@ -142,7 +144,7 @@
           <section>
               <div class="container-fluid text-center description">
                     <div class="row">
-                        <div class="col-md-6 pt-5 description-section">
+                        <div class="col-md-6 pt-5 description-section" data-anime="left">
                             <h4 class="pb-5">Portais Web e Desenvolvimento de Aplicações Corporativas</h4>
                              <p class="pb-3">Com a popularização da Internet, aplicações direcionadas 
                                  para a web têm se tornado cada vez mais comuns. 
@@ -151,7 +153,7 @@
                          </div>
                          <div class="col-md-6 description-img"></div>
                          <div class="col-md-6 description-img2"></div>
-                         <div class="col-md-6 pt-5 description-section">
+                         <div class="col-md-6 pt-5 description-section" data-anime="right">
                              <h4 class="pb-5">O melhor começo para sua ideia de negócio</h4>
                              <p class="pb-3">Falta de capital não é motivo para deixar de empreender.
                                  Hoje com pouco investimento é possivel iniciar ou acelerar o seu negócio através
@@ -168,15 +170,16 @@
                         <div class="col-12 col-md-12 pb-4">
                             <h3>Serviços</h3>
                         </div>
-                        <div class="col-12 col-md-4 box-service">
+                        <div class="col-12 col-md-4 box-service" data-anime="left">
                             <div class="circle-service">
                                 <i class="fab fa-html5"></i>
                             </div>   
                             <h4>Desenvolvimento Web</h4>
                             <p>Sites de qualidade, fáceis de atualizar,
                                 que cabem no seu orçamento e ajudam sua empresa a marcar 
-                               presença na internet e gerar novos negócios.</p>                            </div>
-                        <div class="col-12 col-md-4 box-service">    
+                               presença na internet e gerar novos negócios.</p>                            
+                        </div>
+                        <div class="col-12 col-md-4 box-service" data-anime="left">    
                             <div class="circle-service">
                                 <i class="far fa-image"></i>
                             </div>   
@@ -186,7 +189,7 @@
                                      alcançando o público em todas as plataformas, 
                                     seja mobile ou não.</p>
                         </div>
-                         <div class="col-12 col-md-4 box-service">
+                         <div class="col-12 col-md-4 box-service" data-anime="right">
                             <div class="circle-service">
                                 <i class="fas fa-signal"></i>
                             </div>   
@@ -194,7 +197,7 @@
                             <p>Otimização para mecanismos de busca do seu site, 
                                 deixando em melhores posições nas buscas orgânicas.</p>
                         </div>
-                        <div class="col-12 col-md-4 pt-3 box-service">
+                        <div class="col-12 col-md-4 pt-3 box-service" data-anime="left">
                             <div class="circle-service">
                                 <i class="fab fa-wpforms"></i>
                             </div>   
@@ -203,7 +206,7 @@
                                 que descrevem seu negócio objetivamente e geram 
                                 conversões para sua empresa.</p>
                         </div>
-                        <div class="col-12 col-md-4 pt-3 box-service">
+                        <div class="col-12 col-md-4 pt-3 box-service" data-anime="right">
                             <div class="circle-service">
                                 <i class="far fa-lightbulb"></i>
                             </div>   
@@ -213,7 +216,7 @@
                                  Qualidade e entregas garantidas dentro do prazo.
                             </p>
                         </div>
-                        <div class="col-12 col-md-4 pt-3 box-service">
+                        <div class="col-12 col-md-4 pt-3 box-service" data-anime="right">
                             <div class="circle-service">
                                 <i class="fas fa-trophy"></i>
                             </div>   
@@ -289,5 +292,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/animations.js"></script>
   </body>
 </html>
